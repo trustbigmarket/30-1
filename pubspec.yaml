@@ -1,0 +1,44 @@
+name: azkar
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.2.2  # لحفظ البيانات المحلية
+  http: ^1.1.0  # للتعامل مع API
+  provider: ^6.1.1  # لإدارة الحالة
+  share_plus: ^7.2.1  # لمشاركة الأذكار
+  geolocator: ^10.1.0  # للحصول على الموقع لمواقيت الصلاة
+  adhan: ^2.0.0-nullsafety.2  # لحساب مواقيت الصلاة
+  intl: ^0.19.0  # للتعامل مع التواريخ والأوقات
+  timezone: ^0.9.2
+  flutter_svg: ^2.0.9  # للتعامل مع الصور المتجهة SVG
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/morning_dhikr.svg
+    - assets/images/evening_dhikr.svg
+    - assets/images/prayer_times.svg
+    - assets/images/tasbeeh.svg
+    - assets/images/
+    
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
